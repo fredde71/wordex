@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Wordex Signature (Light / Warm / Premium) */
+:root {
+  color-scheme: light;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  /* varm, mjuk bakgrund */
+  background: radial-gradient(1200px 800px at 20% 0%, rgba(16,185,129,0.10), transparent 55%),
+              radial-gradient(900px 700px at 100% 10%, rgba(2,132,199,0.08), transparent 55%),
+              linear-gradient(180deg, #fbfaf7 0%, #f6f4ef 100%);
+  color: #141414;
+}
+
+/* Scrollbar (lugn, modern) */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-thumb { background: rgba(20,20,20,0.18); border-radius: 999px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.cell-focus {
+  outline: 2px solid rgba(16, 185, 129, 0.55);
+  outline-offset: 2px;
+}
+
+/* Lite “papper” känsla på kort */
+.paper {
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(10px);
+}
+
+/* Snygg text-rendering */
+* {
+  text-rendering: geometricPrecision;
+}
